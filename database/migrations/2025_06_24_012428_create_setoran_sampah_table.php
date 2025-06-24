@@ -26,7 +26,7 @@ return new class extends Migration
 
             $table->float('berat_kg', '8', '2');
             $table->decimal('total_harga', '12', '2');
-            $table->enum('status', ['pending', 'disetujui', 'ditolak']);
+            $table->enum('status', ['pending', 'disetujui', 'ditolak'])->default('pending');
             $table->timestamps();
         });
     }

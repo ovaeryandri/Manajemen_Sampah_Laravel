@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('email');
             $table->enum('role', ['operator', 'nasabah']);
             $table->string('no_hp');
-            $table->decimal('deposit', '12', '2');
+            $table->decimal('deposit', '12', '2')->default(0);
             $table->timestamps();
         });
     }
